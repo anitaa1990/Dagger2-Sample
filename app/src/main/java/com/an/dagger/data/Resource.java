@@ -3,9 +3,9 @@ package com.an.dagger.data;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import static com.an.trailers.data.Status.ERROR;
-import static com.an.trailers.data.Status.LOADING;
-import static com.an.trailers.data.Status.SUCCESS;
+import static com.an.dagger.data.Status.ERROR;
+import static com.an.dagger.data.Status.LOADING;
+import static com.an.dagger.data.Status.SUCCESS;
 
 
 public class Resource<T> {
@@ -33,14 +33,14 @@ public class Resource<T> {
     }
 
     public boolean isSuccess() {
-        return status == Status.SUCCESS && data != null;
+        return status == SUCCESS && data != null;
     }
 
     public boolean isLoading() {
-        return status == Status.LOADING;
+        return status == LOADING;
     }
 
     public boolean isLoaded() {
-        return status != Status.LOADING;
+        return status != LOADING;
     }
 }

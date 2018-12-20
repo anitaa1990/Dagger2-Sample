@@ -62,6 +62,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
 
+    /* RxAndroid  */
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
 
     /* Picasso lib for image loading  */
     implementation 'com.squareup.picasso:picasso:2.71828'

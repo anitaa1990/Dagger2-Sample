@@ -1,4 +1,4 @@
-package com.an.trailers.data
+package com.an.dagger.data
 
 import android.support.annotation.MainThread
 import android.support.annotation.WorkerThread

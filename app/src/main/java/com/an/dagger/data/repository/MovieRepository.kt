@@ -1,12 +1,12 @@
 package com.an.dagger.data.repository
 
 
+import com.an.dagger.data.NetworkBoundResource
+import com.an.dagger.data.Resource
 import com.an.dagger.data.local.dao.MovieDao
 import com.an.dagger.data.local.entity.MovieEntity
 import com.an.dagger.data.remote.api.MovieApiService
 import com.an.dagger.data.remote.model.MovieApiResponse
-import com.an.trailers.data.NetworkBoundResource
-import com.an.trailers.data.Resource
 import io.reactivex.Flowable
 import io.reactivex.Observable
 import javax.inject.Singleton

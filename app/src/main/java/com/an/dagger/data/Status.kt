@@ -1,4 +1,4 @@
-package com.an.trailers.data
+package com.an.dagger.data
 
 enum class Status {
     SUCCESS,

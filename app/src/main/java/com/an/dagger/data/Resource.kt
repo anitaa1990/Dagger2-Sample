@@ -1,9 +1,8 @@
-package com.an.trailers.data
+package com.an.dagger.data
 
-
-import com.an.trailers.data.Status.ERROR
-import com.an.trailers.data.Status.LOADING
-import com.an.trailers.data.Status.SUCCESS
+import com.an.dagger.data.Status.ERROR
+import com.an.dagger.data.Status.LOADING
+import com.an.dagger.data.Status.SUCCESS
 
 
 class Resource<T> private constructor(val status: Status, val data: T?, val message: String?) {

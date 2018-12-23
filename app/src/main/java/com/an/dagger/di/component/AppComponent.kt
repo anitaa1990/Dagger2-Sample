@@ -2,10 +2,7 @@ package com.an.dagger.di.component
 
 import android.app.Application
 import com.an.dagger.AppController
-import com.an.dagger.di.module.ActivityModule
-import com.an.dagger.di.module.ApiModule
-import com.an.dagger.di.module.DbModule
-import com.an.dagger.di.module.ViewModelModule
+import com.an.dagger.di.module.*
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
@@ -26,6 +23,7 @@ import javax.inject.Singleton
             DbModule::class,
             ViewModelModule::class,
             ActivityModule::class,
+            FragmentModule::class,
             AndroidSupportInjectionModule::class]
 )
 @Singleton

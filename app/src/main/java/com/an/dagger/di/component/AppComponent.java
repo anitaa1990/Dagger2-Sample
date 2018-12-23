@@ -6,6 +6,7 @@ import com.an.dagger.AppController;
 import com.an.dagger.di.module.ActivityModule;
 import com.an.dagger.di.module.ApiModule;
 import com.an.dagger.di.module.DbModule;
+import com.an.dagger.di.module.FragmentModule;
 import com.an.dagger.di.module.ViewModelModule;
 
 import javax.inject.Singleton;
@@ -28,6 +29,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
                 DbModule.class,
                 ViewModelModule.class,
                 ActivityModule.class,
+                FragmentModule.class,
                 AndroidSupportInjectionModule.class})
 @Singleton
 public interface AppComponent {

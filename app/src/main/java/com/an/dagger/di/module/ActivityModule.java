@@ -8,6 +8,11 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public abstract class ActivityModule {
 
-    @ContributesAndroidInjector()
+    /*
+     * We modify our ActivityModule by adding the
+     * FragmentModule to the Activity which contains
+     * the fragment
+     */
+    @ContributesAndroidInjector(modules = FragmentModule.class)
     abstract MainActivity contributeMainActivity();
 }

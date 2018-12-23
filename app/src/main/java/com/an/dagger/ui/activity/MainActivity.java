@@ -105,13 +105,11 @@ public class MainActivity extends AppCompatActivity {
     private void displayLoader() {
         binding.moviesList.setVisibility(View.GONE);
         binding.loaderLayout.rootView.setVisibility(View.VISIBLE);
-        binding.loaderLayout.loader.start();
     }
 
     private void hideLoader() {
         binding.moviesList.setVisibility(View.VISIBLE);
         binding.loaderLayout.rootView.setVisibility(View.GONE);
-        binding.loaderLayout.loader.stop();
     }
 
     private void updateMoviesList(List<MovieEntity> movies) {

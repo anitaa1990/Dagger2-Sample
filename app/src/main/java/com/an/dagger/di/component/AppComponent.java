@@ -8,6 +8,8 @@ import com.an.dagger.di.module.ApiModule;
 import com.an.dagger.di.module.DbModule;
 import com.an.dagger.di.module.ViewModelModule;
 
+import javax.inject.Singleton;
+
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.support.AndroidSupportInjectionModule;
@@ -27,6 +29,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
                 ViewModelModule.class,
                 ActivityModule.class,
                 AndroidSupportInjectionModule.class})
+@Singleton
 public interface AppComponent {
 
 

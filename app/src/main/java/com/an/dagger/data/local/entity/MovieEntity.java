@@ -53,6 +53,9 @@ public class MovieEntity implements Parcelable {
     }
 
     public String getPosterPath() {
+        if(posterPath != null && !posterPath.startsWith("http")) {
+            posterPath = String.format("https://image.tmdb.org/t/p/w500%s", posterPath);
+        }
         return posterPath;
     }
 

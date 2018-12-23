@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dagger2-Sample</string>
+    <string name="empty_text">No movies in the list</string>
 </resources>

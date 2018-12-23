@@ -28,6 +28,14 @@ data class MovieEntity(
         var status: String?
 ) : Parcelable {
 
+
+    fun getFormattedPosterPath(): String? {
+        if (posterPath != null && !posterPath!!.startsWith("http")) {
+            posterPath = String.format("https://image.tmdb.org/t/p/w500%s", posterPath)
+        }
+        return posterPath
+    }
+
     constructor(source: Parcel) : this(
             source.readLong(),
             source.readString(),

@@ -9,6 +9,7 @@ import com.an.dagger.di.module.ViewModelModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
+import javax.inject.Singleton
 
 
 /*
@@ -27,6 +28,7 @@ import dagger.android.support.AndroidSupportInjectionModule
             ActivityModule::class,
             AndroidSupportInjectionModule::class]
 )
+@Singleton
 interface AppComponent {
 
     /*
